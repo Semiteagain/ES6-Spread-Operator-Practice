@@ -1,12 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: #ffeaa7;
+  --color-bg1: #fdcb6e;
+  --color-bg-variant: #f1f5f8;
+  --color-primary: hsl(198, 1%, 29%);
+  --
+}
+
 body {
-  background-color: #ffeaa7;
+  background-color: var(--color-bg);
   min-height: 70vh;
   padding: 1rem;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: hsl(198, 1%, 29%);
+  color: var(--color-primary);
   font-family: "Architects Daughter", cursive;
   text-align: center;
   font-size: 130%;
@@ -18,7 +36,7 @@ body {
   min-height: 500px;
   max-width: 500px;
   min-width: 250px;
-  background: #f1f5f8;
+  background:var(--color-bg-variant) ;
   background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
   background-size: 25px 25px;
   border-radius: 20px;
@@ -36,7 +54,7 @@ body {
   transform: rotate(2deg);
   padding: 0.2rem 1.2rem;
   border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
-  background-color: #fdcb6e;
+  background-color: var(--color-bg1);
   font-size: 1.5rem;
 }
 
@@ -47,7 +65,7 @@ body {
   border-bottom-right-radius: 15px 3px;
   border-bottom-left-radius: 3px 15px;
   border: solid 3px transparent;
-  border-bottom: dashed 3px #fdcb6e;
+  border-bottom: dashed 3px var(--color-bg1);
   font-family: "Architects Daughter", cursive;
   font-size: 1rem;
   color: hsla(260, 2%, 25%, 0.7);
@@ -62,10 +80,10 @@ button {
   text-decoration: none;
   padding-bottom: 3px;
   border-radius: 5px;
-  background-color: #ffeaa7;
+  background-color: var(--color-bg);
 }
 button span {
-  background: #f1f5f8;
+  background: var(--color-bg-variant);
   display: block;
   padding: 0.5rem 1rem;
   border-radius: 5px;
